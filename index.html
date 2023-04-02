@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="/style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main cla>
+        <div class="calculator">
+            <div class="calcDisplay" id="calcDisplay">
+            </div>
+            <div class="inputs">
+                <button onclick="appendOperation(1)">1</button>
+                <button onclick="appendOperation(2)">2</button>
+                <button onclick="appendOperation(3)">3</button>
+                <button onclick="appendOperation(4)">4</button>
+                <button onclick="appendOperation(5)">5</button>
+                <button onclick="appendOperation(6)">6</button>
+                <button onclick="appendOperation(7)">7</button>
+                <button onclick="appendOperation(8)">8</button>
+                <button onclick="appendOperation(9)">9</button>
+                <button onclick="appendOperation(0)">0</button>
+                <button onclick="appendOperation('+')">+</button>
+                <button onclick="appendOperation('-')">-</button>
+                <button onclick="appendOperation('*')">*</button>
+                <button onclick="appendOperation('/')">/</button>
+                <button onclick="calcResult()">=</button>
+                <button onclick="">Del</button>
+            </div>
+        </div>
+    </main>	
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* header*/
+
+header {
+    background-color: rgb(210, 210, 210);
+    color: midnightblue;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* main
+*/
+main {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+}
+
+.calculator{
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: "display" "inputFields";
+}
+
+.calcDisplay {
+    height: 6rem;
+    text-align: right;
+    background-color: blanchedalmond;
+    color: brown;
+    
+}
+
+.inputs {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "seven eight nine del del"
+        "four five six multiply divide"
+        "one two three add sub"
+        "zero zero zero equal equal";
+}
+
+.inputs button:nth-child(1) {grid-area: one;}
+.inputs button:nth-child(2) {grid-area: two;}
+.inputs button:nth-child(3) {grid-area: three;}
+.inputs button:nth-child(4) {grid-area: four;}
+.inputs button:nth-child(5) {grid-area: five;}
+.inputs button:nth-child(6) {grid-area: six;}
+.inputs button:nth-child(7) {grid-area: seven;}
+.inputs button:nth-child(8) {grid-area: eight;}
+.inputs button:nth-child(9) {grid-area: nine;}
+.inputs button:nth-child(10) {grid-area: zero;}
+.inputs button:nth-child(11) {grid-area: add;}
+.inputs button:nth-child(12) {grid-area: sub;}
+.inputs button:nth-child(13) {grid-area: multiply;}
+.inputs button:nth-child(14) {grid-area: divide;}
+.inputs button:nth-child(15) {grid-area: equal;}
+.inputs button:nth-child(16) {grid-area: del;}
+
+button {
+    min-width: 1rem;
+    font-size: 2rem;
+    
+}
