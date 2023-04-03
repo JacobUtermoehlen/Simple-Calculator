@@ -8,3 +8,7 @@ function calcResult() {
     let result = eval(container.innerHTML);
     container.innerHTML = result;
 }
+
+function delCalc() {
+    $("#calcDisplay").text(" ");
+}

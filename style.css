@@ -19,6 +19,7 @@ main {
 
 .calculator{
     width: 40%;
+    min-width: fit-content;
     border: 2px solid black;
     border-radius: 8px;
     display: grid;
